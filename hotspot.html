@@ -1,42 +1,43 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Hotspot</title>
-
-
-
-<link href="estilosHotSpot.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Hot spot, muestra información cuando se hace hover sobre un div">
+    <meta name="keywords" content="Hot spot, Javascript, HTML5, Diseño responsivo">
+    <meta name="author" content="Adib Abud Jaso">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Hotspot</title>
+    <link href="estilosHotSpot.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="codigo.js"></script>
 </head>
 
 <body>
-    <div id="a">
-        <img src="animacion.gif" alt="animacion" />
-        
-    </div>
-    
-    
-    <div id="b">
-        <div class="textoHotSpot"><b>Flexión de rodilla:</b> La altura del sillín debe ser medida para evitar la sobre extención de la pierna o el doblaje excesivo de la misma</div>
-        <br />
-        <div class="textoHotSpot"><b>Posición del zapato:</b> el eje del pie debe estar alineado al eje del pedal</div>
-    	
-        <div class="showhim" id="circulo1"><img class="imagenTransparente" src="puntoRojo.gif" alt="animacion" />
-            <div class="showme"><b>Multiplicacion</b>
-            <p>El número de dientes en cada plato de la multiplicación gobernará el avance en cada pedaleo</p>
-            <p>A más dientes, más avance y más fuerza requerida para lograr el pedaleo; menos dientes, más fácil el pedaleo y menos avance</p>
+    <header>
+        <h1>Unidad 1:</h1>
+        <h2>Actividad 1</h2>
+    </header>
+    <section class="zonaSensible"><!-- inicio ROLL OVER -->
+        <div class="mensajes">
+            <div class="informacion">
+                <b>Multiplicacion</b>
+                <p>El número de dientes en cada plato de la multiplicación gobernará el avance en cada pedaleo</p>
+                <p>A más dientes, más avance y más fuerza requerida para lograr el pedaleo; menos dientes, más fácil el pedaleo y menos avance</p>
+            </div>
+            <div class="informacion">
+                <b>Sprout o piñon</b>
+                <p>El número de dientes en cada plato del piñón gobernará el avance en cada pedaleo.</p>
+                <p>De manera contraria que en la multiplicación, entre menos dientes, más avance y mayor la dificultad en el pedaleo.</p>
             </div>
         </div>
-        <div class="showhim" id="circulo2"><img class="imagenTransparente" src="puntoRojo.gif" alt="animacion" />
-            <div class="showme"><b>Sprout o piñon</b>
-            <p>El número de dientes en cada plato del piñón gobernará el avance en cada pedaleo.</p>
-            <p>De manera contraria que en la multiplicación, entre menos dientes, más avance y mayor la dificultad en el pedaleo.</p>
-            </div>
+        <div class="hoverable">
+            <img src="animacion.gif" alt="imagen animada de bicicleta" id="imagenFondo" />
+            <img id="circulo1" class="puntoSensible" src="puntoRojo.gif" alt="animacion" />
+            <img id="circulo2" class="puntoSensible" src="puntoRojo.gif" alt="animacion" />
         </div>
-        
-        
-    </div>
-
+    </section><!-- fin ROLL OVER -->
+    <footer>
+        <p>CUAED 2014</p>
+    </footer>
 
 </body>
 </html>

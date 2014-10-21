@@ -1,61 +1,83 @@
 @charset "UTF-8";
 /*Roll over*/
-.showme{ 
-display: none;
-}
-.showhim:hover .showme{
-display : inline-block;
-}
-.showhim:hover .ok{
-display: none;
-}
-
-.showhim {
-	z-index:2;
-	position:absolute;
-}
-.showme {
-	border-style:solid;
-	border-width:1px;
-	border-color:orange;
-	font-family:"Verdana", Arial, sans-serif;
-	font-size:small;
-	background-color:#FFF;
-	padding: 5px;
-	bottom:50px;
-	z-index:3;
-	position:absolute;
-	width:200px;
-	font-size:0.7em;
-}
-
-.imagenTransparente{
-	opacity:0.5;	
-}
 #circulo1{
-	
-	top:105px;
-	left:305px;
+    top:195px;
+    left:302px;
 }
-
 #circulo2{
-	top:90px;
-	left:230px;
+    top:184px;
+    left:230px;
 }
-
-
-/*Posición en capas*/
-.textoHotSpot{
-	width:200px;
-	border-style:solid;
-	border-width:1px;
-	border-color:red;
-	font-family:"Verdana", Arial, sans-serif;
-	font-size:small;
-	z-index:2;
-	position:relative;
+.puntoSensible {
+    position: absolute;
+    opacity:0.5;
 }
-
-div { position:relative; }
-#a  { z-index:1; }
-#b  { z-index:2; top:-200px; }
+.puntoSensible:hover{
+    opacity:0.8;
+}
+.mensajes{
+    position: absolute;
+    display: inline-block;
+}
+.informacion {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #CC003D;
+	font-family: "Times New Roman", Times, serif;
+	background-color: #F5F4F6;
+	padding: 10px;
+	top:0;
+    left:0;
+	z-index: 3;
+	position: absolute;
+	min-width: 140px;
+	font-size: 0.75em;
+	border-radius: 5px;
+	text-align: justify;
+    display: none;
+}
+section.zonaSensible{
+    text-align: center;
+    overflow:hidden;
+}
+div.hoverable{
+    position: relative;
+    display: inline-block;
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+}
+/*Fin Roll over*/
+/*Estilos extras, pueden borrarse si el roll over es incluído en otro tipo de HTML*/
+body{
+    max-width: 960px;
+    margin: 5px auto;
+    background: white;
+    border-radius: 8px;
+    padding: 10px 10px 30px 30px;
+    border: 1px solid #adaa9f;
+    box-shadow: 0 2px 2px #9c9c9c;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #999;
+    text-align:left;
+    margin-bottom:0;
+}
+h2{
+    margin: auto 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #cf886c;
+    text-align:left;
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    color: #AAA;
+}
